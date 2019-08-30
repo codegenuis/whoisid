@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-primary-bg {
+  background-color: #195E7D !important;
+}
+
+.App-header {
+  min-height: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(7px + 2vmin);
+  color: white;
+  margin: 0 !important;
+  padding: 20px
+}
+
+.wrapper {
+  background-image: url('../assets/background-edit.jpg');
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Card-header {
+  display: flex;
+  height: 100%;
+  margin-top: 5em;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none
+}
+
+.InputField {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+   background-color: #E6E7E9;
+}
+
+.App-form {
+  background-color: #fff;
+  height: auto;
+  padding: 35px;
+  text-align: 'left';
+}
+.Signup-wrapper {
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+}
+
+.App-primary-button {
+  width: 100%;
+}
+
+
+
+.App-color {
+  color: #BB8A3D;
+}
+
+/* media queries */
+@media(max-width: 768px){
+  .Card-header {
+    margin-top: 0;
+  }
+  .MuiContainer-root {
+    padding: 0 !important;
+  }
+.InputField {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+   background-color: #E6E7E9;
+}
+.App-form {
+  padding: 30px 10px;
+}
+.App-primary-button {
+  margin-top: 30px !important;
+  width: 100%;
+}
+
+}
