@@ -14,7 +14,7 @@
     "react-html5-camera-photo": "^1.4.3",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "yarn run build"
   },
   "scripts": {
     "start": "react-scripts start",
