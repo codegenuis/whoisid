@@ -75,7 +75,12 @@ class Verify extends Component {
                                     <p>Take Picture</p>
                                 </div>
                                 <div className={this.state.show ? "show" : "hide"} >
-                                    <Camera onTakePhoto={(dataUri) => { this.onTakePhoto(dataUri); }}  idealFacingMode = {FACING_MODES.ENVIRONMENT} />
+                                    <Camera 
+                                        onTakePhoto={(dataUri) => { this.onTakePhoto(dataUri); }}  
+                                        idealFacingMode = {FACING_MODES.ENVIRONMENT}
+                                        isMaxResolution = {true}
+                                        isFullscreen = {true}
+                                     />
                                 </div>
                                 <div className={this.state.image !=='' ? "show":"hide"}>
                                     <img src={this.state.image} alt="verification" style={{maxWidth: "100%"}} />
