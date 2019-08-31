@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button'
 import Header from '../components/header'
-import Camera from 'react-html5-camera-photo';
+import Camera,{FACING_MODES} from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
@@ -75,7 +75,7 @@ class Verify extends Component {
                                     <p>Take Picture</p>
                                 </div>
                                 <div className={this.state.show ? "show" : "hide"} >
-                                    <Camera onTakePhoto={(dataUri) => { this.onTakePhoto(dataUri); }} />
+                                    <Camera onTakePhoto={(dataUri) => { this.onTakePhoto(dataUri); }}  idealFacingMode = {FACING_MODES.ENVIRONMENT} />
                                 </div>
                                 <div className={this.state.image !=='' ? "show":"hide"}>
                                     <img src={this.state.image} alt="verification" style={{maxWidth: "100%"}} />
