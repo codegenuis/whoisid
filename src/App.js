@@ -4,7 +4,7 @@ import Login from './views/login';
 import Verify from './views/verify';
 import Signup from './views/signup';
 import VerifyOTP from './views/verify-otp';
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { HashRouter as Router, Route } from "react-router-dom"
 
 function App() {
   return (
