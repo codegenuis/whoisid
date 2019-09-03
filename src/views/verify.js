@@ -8,13 +8,14 @@ import Camera,{FACING_MODES} from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 class Verify extends Component {
     constructor(props) {
         super(props)
         this.state = {
             show: false,
-            image: ''
+            image: []
         }
     }
 
@@ -24,7 +25,8 @@ class Verify extends Component {
 
     onTakePhoto = (dataUri) => {
         // Do stuff with the dataUri photo...
-        this.setState({ image: dataUri, show: false })
+        this.state.image.push(dataUri)
+        this.setState({show: false })
     }
 
     render() {
@@ -42,6 +44,7 @@ class Verify extends Component {
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
+                                    disabled
                                 />
                                 <TextField
                                     id="standard-dense"
@@ -49,6 +52,7 @@ class Verify extends Component {
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
+                                    disabled
                                 />
                                 <TextField
                                     id="standard-dense"
@@ -57,17 +61,11 @@ class Verify extends Component {
                                     variant="outlined"
                                     className="InputField"
                                 />
-                                <TextField
-                                    id="standard-dense"
-                                    label="103 ibidun Street off"
-                                    fullWidth
-                                    variant="outlined"
-                                    className="InputField"
-                                />
+                                
                                 <div
                                     onClick={this.changeState}
                                     style={{ PaddingTop: 30, paddingBottom: 10, backgroundColor: '#E6E7E9' }}
-                                    className={this.state.image !== '' ? 'hide' : 'show'}
+                                    className={this.state.image.length === 3 ? 'hide' : 'show'}
                                 >
                                     <div style={{ fontSize: 70, }}>
                                         <FontAwesomeIcon icon={faCamera} />
@@ -79,12 +77,21 @@ class Verify extends Component {
                                         onTakePhoto={(dataUri) => { this.onTakePhoto(dataUri); }}  
                                         idealFacingMode = {FACING_MODES.ENVIRONMENT}
                                         isMaxResolution = {true}
-                                        isFullscreen = {true}
+                                        isFullscreen = {false}
                                      />
                                 </div>
-                                <div className={this.state.image !=='' ? "show":"hide"}>
-                                    <img src={this.state.image} alt="verification" style={{maxWidth: "100%"}} />
+                                <div className={this.state.image.length > 0 ? "show":"hide"}>
+                                {this.state.image.map((img,index) =>(
+                                     <img src={img} alt="verification" style={{maxWidth: "100%"}} key={index} />
+                                ))}
                                 </div>
+                                <TextField
+                                    id="standard-dense"
+                                    label="103 ibidun Street off"
+                                    fullWidth
+                                    variant="outlined"
+                                    className="InputField"
+                                />
                                 <TextField
                                     id="standard-dense"
                                     label="Western Avenue, ojulegba"
@@ -92,6 +99,7 @@ class Verify extends Component {
                                     variant="outlined"
                                     className="InputField"
                                 />
+                                <TextareaAutosize aria-label="minimum height" rows={6} placeholder="Notes" style={{padding: 10}} />
                             </div>
                             <Button className="App-primary-bg App-primary-button" variant="contained" color="primary" style={{ paddingRight: 30, paddingLeft: 30, paddingTop: 10, paddingBottom: 10 }}>
                                 Done

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
 .App {
   text-align: center;
 }
@@ -64,6 +70,25 @@
 
 .App-primary-button {
   width: 100%;
+}
+.profileImage {
+  padding-top: 4px;
+  background-color: #7B7B7D;
+  width: 3rem;
+  position: absolute;
+  top: 22%;
+  left: 4%;
+  height: 3rem;
+  border-radius: 50%;
+  padding-bottom: 8px;
+}
+
+.MuiExpansionPanelDetails-root {
+  flex-direction: column;
+}
+
+.App-Text-White {
+  color: #fff !important
 }
 
 
