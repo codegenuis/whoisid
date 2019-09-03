@@ -35,7 +35,7 @@ class Verify extends Component {
                 <CssBaseline />
                 <Header title="Verify - AA12" />
                 <div className="Card-header">
-                    <Container maxWidth="sm" style={{ textAlign: 'center' }} >
+                    <Container maxWidth="md" style={{ textAlign: 'center' }} >
                         <form className="App-form" noValidate autoComplete="off">
                             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <TextField

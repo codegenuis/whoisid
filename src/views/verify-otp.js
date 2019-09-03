@@ -26,7 +26,7 @@ class VerifyOTP extends Component {
                     </Typography>
                 </div>
                 <div className="Signup-wrapper">
-                    <Container maxWidth="sm" style={{ textAlign: 'center' }} >
+                    <Container maxWidth="md" style={{ textAlign: 'center' }} >
                         <form className="App-form" noValidate autoComplete="off" style={{ backgroundColor: 'transparent' }}>
                             <h2 style={{color: 'white'}}>Enter OTP sent to your phone</h2>
                             <TextField

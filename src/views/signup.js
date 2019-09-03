@@ -26,7 +26,7 @@ class Signup extends Component {
                     </Typography>
                 </div>
                 <div className="Signup-wrapper">
-                    <Container maxWidth="sm" style={{ textAlign: 'center' }} >
+                    <Container maxWidth="md" style={{ textAlign: 'center' }} >
                         <form className="App-form" noValidate autoComplete="off" style={{ backgroundColor: 'transparent' }}>
                             <h2 style={{color: 'white'}}>Be in control of your privacy</h2>
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
