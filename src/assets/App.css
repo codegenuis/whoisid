@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root {
+body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,.MuiTypography-root {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
 
