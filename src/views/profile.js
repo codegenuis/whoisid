@@ -116,14 +116,14 @@ class Profile extends Component {
                                 <Typography>My Services</Typography>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
-                                <ExpansionPanel style={{ backgroundColor: '#a1d4e2', color: '#fff',marginBottom: 20 }}>
+                                <ExpansionPanel style={{ backgroundColor: '#a1d4e2', color: '#fff',marginBottom: 20, marginTop: 20 }}>
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel3a-content"
                                         id="panel3a-header"
 
                                     >
-                                        <Typography>Take A Ride</Typography>
+                                        <Typography className = "serviceText">Take A Ride</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -143,7 +143,7 @@ class Profile extends Component {
                                         aria-controls="panel3a-content"
                                         id="panel3a-header"
                                     >
-                                        <Typography>Restaurant Nearby</Typography>
+                                        <Typography className = "serviceText">Restaurant Nearby</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -163,7 +163,7 @@ class Profile extends Component {
                                         aria-controls="panel3a-content"
                                         id="panel3a-header"
                                     >
-                                        <Typography>Apply for loans</Typography>
+                                        <Typography className = "serviceText">Apply for loans</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -183,7 +183,7 @@ class Profile extends Component {
                                         aria-controls="panel3a-content"
                                         id="panel3a-header"
                                     >
-                                        <Typography>Get Insured</Typography>
+                                        <Typography className = "serviceText">Get Insured</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -203,7 +203,7 @@ class Profile extends Component {
                                         aria-controls="panel3a-content"
                                         id="panel3a-header"
                                     >
-                                        <Typography>Call for Emergency</Typography>
+                                        <Typography className = "serviceText">Call for Emergency</Typography>
                                     </ExpansionPanelSummary>
                                     <ExpansionPanelDetails>
                                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
