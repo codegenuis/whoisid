@@ -3,6 +3,13 @@
 body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,.MuiTypography-root {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
+/* overwrites */
+.MuiTypography-body1 {
+  font-size: 1.8rem !important;
+}
+.MuiExpansionPanelDetails-root {
+  padding-top: 0 !important; 
+}
 
 .App {
   text-align: center;
@@ -47,7 +54,7 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
 }
 
 .hide {
-  display: none
+  display: none !important
 }
 
 .InputField {
@@ -72,15 +79,24 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
   width: 100%;
 }
 .profileImage {
-  padding-top: 4px;
   background-color: #7B7B7D;
-  width: 3rem;
+  width: 5rem;
   position: absolute;
-  top: 22%;
+  top: 34%;
   left: 4%;
-  height: 3rem;
+  height: 5rem;
   border-radius: 50%;
-  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileHeader { 
+  background-color: #E6E7E9;
+  width: -webkit-fill-available;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .MuiExpansionPanelDetails-root {

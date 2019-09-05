@@ -32,7 +32,7 @@ class Profile extends Component {
     }
 
     changeState = () => {
-        this.setState({ show: true, change: false })
+        this.setState({ show: true,change: false })
     }
 
     handleChange = panel => (event, isExpanded) => {
@@ -45,7 +45,7 @@ class Profile extends Component {
 
     onTakePhoto = (dataUri) => {
         // Do stuff with the dataUri photo...
-        this.setState({ image: dataUri, show: false })
+        this.setState({ image: dataUri, show: false, })
     }
 
     render() {
@@ -65,8 +65,7 @@ class Profile extends Component {
                             <ExpansionPanelDetails style={{ paddingLeft: 0, paddingRight: 0 }}>
                                 <div
                                     onClick={this.changeState}
-                                    style={{ PaddingTop: 30, paddingBottom: 10, backgroundColor: '#E6E7E9', width: '-webkit-fill-available' }}
-                                    className={this.state.change ? 'show' : 'hide'}
+                                    className={`profileHeader ${this.state.change ? 'show' : 'hide'}`}
                                 >
                                     <div style={{ fontSize: 70, }}>
                                         <FontAwesomeIcon icon={faCamera} />
@@ -85,9 +84,9 @@ class Profile extends Component {
                                 </div>
                                 <div
 
-                                    className={`profileImage ${this.state.change ? 'show' : 'hide'}`}
+                                    className={`profileImage`}
                                 >
-                                    <div style={{ fontSize: 26 }}>
+                                    <div style={{ fontSize: 35 }}>
                                         <FontAwesomeIcon icon={faCamera} />
                                     </div>
                                 </div>
