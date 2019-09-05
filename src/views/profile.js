@@ -93,14 +93,14 @@ class Profile extends Component {
 
                                 <div style={{ textAlign: 'left', padding: 20 }}>
                                     <ListItem button>
-                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>Kitan Muhammed</h3>
+                                        <h3 style={{fontSize: 27, fontWeight: '500',marginBlockStart: 15, marginBlockEnd: 15}}>Kitan Muhammed</h3>
                                     </ListItem>
                                     <Divider />
                                     <ListItem button divider>
-                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>080 8287 3187</h3>
+                                        <h3 style={{fontSize: 27, fontWeight: '500',marginBlockStart: 15, marginBlockEnd: 15}}>080 8287 3187</h3>
                                     </ListItem>
                                     <ListItem button divider>
-                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>103 Ibidun Street, Aluasa Ikeja</h3>
+                                        <h3 style={{fontSize: 27, fontWeight: '500',marginBlockStart: 15, marginBlockEnd: 15}}>103 Ibidun Street, Aluasa Ikeja</h3>
                                     </ListItem>
                                 </div>
 
