@@ -17,6 +17,9 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
 .App {
   text-align: center;
 }
+.img-responsive {
+  max-width: 100%;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
