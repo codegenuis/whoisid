@@ -55,7 +55,7 @@ class Profile extends Component {
                 <Header title="Me" />
                 <div className="Card-header">
                     <Container maxWidth="md" style={{ textAlign: 'center' }} >
-                        <ExpansionPanel expanded={true} onChange={this.handleChange('panel1')}>
+                        <ExpansionPanel expanded={true} onChange={this.handleChange('panel1')} style={{marginBottom: 0}}>
                             {/* <ExpansionPanelSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
@@ -93,15 +93,14 @@ class Profile extends Component {
 
                                 <div style={{ textAlign: 'left', padding: 20 }}>
                                     <ListItem button>
-                                        <ListItemText primary="Kitan Muhammed" />
+                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>Kitan Muhammed</h3>
                                     </ListItem>
                                     <Divider />
                                     <ListItem button divider>
-                                        <ListItemText primary="080 8287 3187" />
+                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>080 8287 3187</h3>
                                     </ListItem>
                                     <ListItem button divider>
-                                        <ListItemText primary="103 Ibidun Street" />
-                                        <p>Aluasa Ikeja, Lagos</p>
+                                        <h3 style={{fontSize: 27, fontWeight: '500'}}>103 Ibidun Street, Aluasa Ikeja</h3>
                                     </ListItem>
                                 </div>
 
@@ -227,7 +226,7 @@ class Profile extends Component {
                                 id="panel4bh-header"
                                 className='App-primary-bg App-Text-White'
                             >
-                                <Typography>Privacy</Typography>
+                                <Typography>My Privacy</Typography>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20 }}>
