@@ -229,7 +229,7 @@ class Profile extends Component {
                                 <Typography>My Privacy</Typography>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
-                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20 }}>
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20, marginTop: 20 }}>
                                     <img src={Uber} alt="uber" style={{ width: 40,height: 42 }} />
                                     <Switch
                                         checked={this.state.checkedA}
@@ -239,7 +239,7 @@ class Profile extends Component {
                                     />
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBottom: 20 }}>
-                                    <img src={Bolt} alt="uber" style={{ width: 40 }} />
+                                    <img src={Bolt} alt="uber" style={{ }} />
                                     <Switch
                                         checked={this.state.checkedA}
                                         onChange={this.change('checkedA')}
