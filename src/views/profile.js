@@ -55,14 +55,14 @@ class Profile extends Component {
                 <Header title="Me" />
                 <div className="Card-header">
                     <Container maxWidth="md" style={{ textAlign: 'center' }} >
-                        <ExpansionPanel expanded={true} onChange={this.handleChange('panel1')} style={{marginBottom: 0}}>
+                        <ExpansionPanel expanded={true} onChange={this.handleChange('panel1')} style={{marginBottom: 0,paddingBottom:0}}>
                             {/* <ExpansionPanelSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
                             >
                             </ExpansionPanelSummary> */}
-                            <ExpansionPanelDetails style={{ paddingLeft: 0, paddingRight: 0 }}>
+                            <ExpansionPanelDetails style={{ paddingLeft: 0, paddingRight: 0,paddingBottom:0 }}>
                                 <div
                                     onClick={this.changeState}
                                     className={`profileHeader ${this.state.change ? 'show' : 'hide'}`}
