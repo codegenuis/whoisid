@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/whoisid/static/css/main.26307778.chunk.css",
+    "main.css": "/whoisid/static/css/main.89e0aa0a.chunk.css",
     "main.js": "/whoisid/static/js/main.52df7366.chunk.js",
     "main.js.map": "/whoisid/static/js/main.52df7366.chunk.js.map",
     "runtime~main.js": "/whoisid/static/js/runtime~main.5b404ab2.js",
@@ -9,10 +9,10 @@
     "static/js/2.1607bc68.chunk.js": "/whoisid/static/js/2.1607bc68.chunk.js",
     "static/js/2.1607bc68.chunk.js.map": "/whoisid/static/js/2.1607bc68.chunk.js.map",
     "index.html": "/whoisid/index.html",
-    "precache-manifest.e842ea749f18a20654123dfebee4fecb.js": "/whoisid/precache-manifest.e842ea749f18a20654123dfebee4fecb.js",
+    "precache-manifest.1d4c22b6411185515f3a8d505c48e091.js": "/whoisid/precache-manifest.1d4c22b6411185515f3a8d505c48e091.js",
     "service-worker.js": "/whoisid/service-worker.js",
     "static/css/2.f0405d8a.chunk.css.map": "/whoisid/static/css/2.f0405d8a.chunk.css.map",
-    "static/css/main.26307778.chunk.css.map": "/whoisid/static/css/main.26307778.chunk.css.map",
+    "static/css/main.89e0aa0a.chunk.css.map": "/whoisid/static/css/main.89e0aa0a.chunk.css.map",
     "static/media/App.css": "/whoisid/static/media/background-edit.4b34440f.jpg"
   }
 }
