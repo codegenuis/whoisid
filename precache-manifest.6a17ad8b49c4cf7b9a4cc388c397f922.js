@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6b568d9f40252b398301286e77124f0",
+    "revision": "e942a47b12d5a15e5fcbd4ee68d2196b",
     "url": "/whoisid/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whoisid/static/css/2.f0405d8a.chunk.css"
   },
   {
-    "revision": "ebe1c94d888318ad04c8",
+    "revision": "6f0304aa7bdf26093637",
     "url": "/whoisid/static/css/main.3597c764.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whoisid/static/js/2.b274e523.chunk.js"
   },
   {
-    "revision": "ebe1c94d888318ad04c8",
-    "url": "/whoisid/static/js/main.e992a304.chunk.js"
+    "revision": "6f0304aa7bdf26093637",
+    "url": "/whoisid/static/js/main.75f3858f.chunk.js"
   },
   {
     "revision": "a1c7fff12bc481e608cf",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whoisid/static/media/background-edit.4b34440f.jpg"
   },
   {
-    "revision": "245d68c776cc5ae65e6279fb5cef85b7",
-    "url": "/whoisid/static/media/logo.245d68c7.png"
+    "revision": "98c82ebde1117dc0fe03daa32985622f",
+    "url": "/whoisid/static/media/logo.98c82ebd.png"
   }
 ]);

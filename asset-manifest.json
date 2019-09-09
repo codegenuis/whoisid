@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/whoisid/static/css/main.3597c764.chunk.css",
-    "main.js": "/whoisid/static/js/main.e992a304.chunk.js",
-    "main.js.map": "/whoisid/static/js/main.e992a304.chunk.js.map",
+    "main.js": "/whoisid/static/js/main.75f3858f.chunk.js",
+    "main.js.map": "/whoisid/static/js/main.75f3858f.chunk.js.map",
     "runtime~main.js": "/whoisid/static/js/runtime~main.5b404ab2.js",
     "runtime~main.js.map": "/whoisid/static/js/runtime~main.5b404ab2.js.map",
     "static/css/2.f0405d8a.chunk.css": "/whoisid/static/css/2.f0405d8a.chunk.css",
     "static/js/2.b274e523.chunk.js": "/whoisid/static/js/2.b274e523.chunk.js",
     "static/js/2.b274e523.chunk.js.map": "/whoisid/static/js/2.b274e523.chunk.js.map",
     "index.html": "/whoisid/index.html",
-    "precache-manifest.78dffd4781690a73e614bab12149271f.js": "/whoisid/precache-manifest.78dffd4781690a73e614bab12149271f.js",
+    "precache-manifest.6a17ad8b49c4cf7b9a4cc388c397f922.js": "/whoisid/precache-manifest.6a17ad8b49c4cf7b9a4cc388c397f922.js",
     "service-worker.js": "/whoisid/service-worker.js",
     "static/css/2.f0405d8a.chunk.css.map": "/whoisid/static/css/2.f0405d8a.chunk.css.map",
     "static/css/main.3597c764.chunk.css.map": "/whoisid/static/css/main.3597c764.chunk.css.map",
     "static/media/App.css": "/whoisid/static/media/background-edit.4b34440f.jpg",
-    "static/media/logo.png": "/whoisid/static/media/logo.245d68c7.png"
+    "static/media/logo.png": "/whoisid/static/media/logo.98c82ebd.png"
   }
 }
