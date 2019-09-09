@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button'
 import { Link } from "react-router-dom"
 import Typography from '@material-ui/core/Typography';
+import logo from '../assets/logo.png'
 
 class Signup extends Component {
     constructor(props) {
@@ -21,9 +22,7 @@ class Signup extends Component {
                 <div className="wrapper">
                 <div style={{display: 'flex'}}>
                     <div style={{flex: 1}}></div>
-                    <Typography variant="h5" gutterBottom className="App-color" style={{fontWeight: 'bold'}}>
-                        WhoIsID.Co
-                    </Typography>
+                    <img src={logo} alt="whois"/>
                 </div>
                 <div className="Signup-wrapper">
                     <Container maxWidth="md" style={{ textAlign: 'center' }} >
