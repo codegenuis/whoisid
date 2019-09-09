@@ -11,7 +11,7 @@ const Header = (props) => (
             <Typography variant="h6" gutterBottom style={{ flex: 1 }}>
                 {props.title}
         </Typography>
-        <img src={logo} alt="whois" style={{width:156}}/>
+        <img src={logo} alt="whois"/>
         </Box>
     </React.Fragment>
 )
