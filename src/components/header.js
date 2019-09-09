@@ -2,6 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import logo from '../assets/logo.png'
 
 const Header = (props) => (
     <React.Fragment>
@@ -10,9 +11,7 @@ const Header = (props) => (
             <Typography variant="h6" gutterBottom style={{ flex: 1 }}>
                 {props.title}
         </Typography>
-            <Typography variant="h6" gutterBottom className="App-color">
-                WhoIsID.Co
-        </Typography>
+        <img src={logo} alt="whois" style={{width:156}}/>
         </Box>
     </React.Fragment>
 )

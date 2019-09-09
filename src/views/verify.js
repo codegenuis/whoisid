@@ -99,7 +99,7 @@ class Verify extends Component {
                                     variant="outlined"
                                     className="InputField"
                                 />
-                                <TextareaAutosize aria-label="minimum height" rows={6} placeholder="Notes" style={{padding: 10}} />
+                                <TextareaAutosize aria-label="minimum height" rows={6} placeholder="Notes" style={{padding: 10,fontFamily: 'inherit',fontSize: 16,background: '#E6E7E9'}} />
                             </div>
                             <Button className="App-primary-bg App-primary-button" variant="contained" color="primary" style={{ paddingRight: 30, paddingLeft: 30, paddingTop: 10, paddingBottom: 10 }}>
                                 Done

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,.MuiTypography-root {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 /* overwrites */
 .MuiTypography-body1 {
