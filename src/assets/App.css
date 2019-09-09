@@ -99,7 +99,7 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
 .profileHeader { 
   background-color: #E6E7E9;
   width: -webkit-fill-available;
-  height: 230px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
