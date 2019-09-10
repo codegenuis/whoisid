@@ -10,6 +10,12 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
 .MuiExpansionPanelDetails-root {
   padding-top: 0 !important; 
 }
+.MuiExpansionPanelSummary-content {
+  margin: 0 !important;
+}
+.MuiExpansionPanel-root.Mui-expanded {
+  margin: 0 !important;
+}
 .serviceText{
   font-size: 15px !important;
   font-weight: 500;
@@ -39,7 +45,8 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
   font-size: calc(7px + 2vmin);
   color: white;
   margin: 0 !important;
-  padding: 20px
+  padding: 15px;
+  width: 100%
 }
 
 .wrapper {
@@ -89,7 +96,7 @@ body,.MuiTypography-body1,.MuiButton-root,.MuiInputBase-root,.MuiFormLabel-root,
   background-color: #7B7B7D;
   width: 5rem;
   position: absolute;
-  top: 23%;
+  top: 35%;
   left: 4%;
   height: 5rem;
   border-radius: 50%;

@@ -8,7 +8,7 @@ const Header = (props) => (
     <React.Fragment>
         <CssBaseline />
         <Box component="div" m={1} className="App-primary-bg App-header">
-            <Typography variant="h6" gutterBottom style={{ flex: 1 }}>
+            <Typography variant="h6" gutterBottom style={{ flex: 1,textAlign: 'left' }}>
                 {props.title}
         </Typography>
         <img src={logo} alt="whois"/>

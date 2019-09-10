@@ -27,7 +27,8 @@ class Profile extends Component {
             show: false,
             change: true,
             profileImage: '',
-            checkedA: true
+            checkedA: true,
+            nestedExpanded : false,
         }
     }
 
@@ -37,6 +38,10 @@ class Profile extends Component {
 
     handleChange = panel => (event, isExpanded) => {
         this.setState({ expanded: isExpanded ? panel : false })
+    };
+
+    handlenestedChange = panel => (event, isExpanded) => {
+        this.setState({ nestedExpanded: isExpanded ? panel : false })
     };
 
     change = name => event => {
@@ -52,16 +57,16 @@ class Profile extends Component {
         return (
             <React.Fragment>
                 <CssBaseline />
-                <Header title="Me" />
                 <div className="Card-header">
                     <Container maxWidth="md" style={{ textAlign: 'center' }} >
-                        <ExpansionPanel expanded={true} onChange={this.handleChange('panel1')} style={{marginBottom: 0,paddingBottom:0}}>
-                            {/* <ExpansionPanelSummary
-                                expandIcon={<ExpandMoreIcon />}
+                        <ExpansionPanel expanded={this.state.expanded === 'panel1'} onChange={this.handleChange('panel1')} style={{marginBottom: 0,padding:0}}>
+                            <ExpansionPanelSummary
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
+                                style={{padding: 0}}
                             >
-                            </ExpansionPanelSummary> */}
+                              <Header title="Me" />
+                            </ExpansionPanelSummary>
                             <ExpansionPanelDetails style={{ paddingLeft: 0, paddingRight: 0,paddingBottom:0 }}>
                                 <div
                                     onClick={this.changeState}
@@ -111,12 +116,15 @@ class Profile extends Component {
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header"
-                                style={{ backgroundColor: '#0F88B3', color: '#fff' }}
+                                style={{ backgroundColor: '#0F88B3', color: '#fff',padding:7 }}
                             >
                                 <Typography>My Services</Typography>
                             </ExpansionPanelSummary>
                             <ExpansionPanelDetails>
-                                <ExpansionPanel style={{ backgroundColor: '#a1d4e2', color: '#fff',marginBottom: 20, marginTop: 20 }}>
+                                <ExpansionPanel 
+                                style={{color: '#000',marginBottom: 20, boxShadow: 'none' }} 
+                                expanded={this.state.nestedExpanded === 'panel3a'} 
+                                onChange={this.handlenestedChange('panel3a')}>
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel3a-content"
@@ -137,11 +145,15 @@ class Profile extends Component {
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
 
-                                <ExpansionPanel style={{ backgroundColor: '#276475', color: '#fff',marginBottom: 20 }}>
+                                <ExpansionPanel 
+                               style={{color: '#000',marginBottom: 20, boxShadow: 'none' }}
+                                expanded={this.state.nestedExpanded === 'panel3b'} 
+                                onChange={this.handlenestedChange('panel3b')}
+                                >
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
-                                        aria-controls="panel3a-content"
-                                        id="panel3a-header"
+                                        aria-controls="panel3b-content"
+                                        id="panel3b-header"
                                     >
                                         <Typography className = "serviceText">Restaurant Nearby</Typography>
                                     </ExpansionPanelSummary>
@@ -157,7 +169,11 @@ class Profile extends Component {
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
 
-                                <ExpansionPanel style={{ backgroundColor: '#6F0A0A', color: '#fff',marginBottom: 20 }}>
+                                <ExpansionPanel 
+                               style={{color: '#000',marginBottom: 20, boxShadow: 'none' }}
+                                expanded={this.state.nestedExpanded === 'panel3c'}
+                                 onChange={this.handlenestedChange('panel3c')}
+                                >
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel3a-content"
@@ -177,7 +193,11 @@ class Profile extends Component {
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
 
-                                <ExpansionPanel style={{ backgroundColor: '#488A0A', color: '#fff',marginBottom: 20 }}>
+                                <ExpansionPanel 
+                                style={{color: '#000',marginBottom: 20, boxShadow: 'none' }}
+                                expanded={this.state.nestedExpanded === 'panel3d'} 
+                                onChange={this.handlenestedChange('panel3d')}
+                                >
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel3a-content"
@@ -197,7 +217,11 @@ class Profile extends Component {
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
 
-                                <ExpansionPanel style={{ backgroundColor: '#A6E2A1', color: '#fff',marginBottom: 20 }}>
+                                <ExpansionPanel 
+                                style={{color: '#000',marginBottom: 20, boxShadow: 'none' }}
+                                expanded={this.state.nestedExpanded === 'panel3e'} 
+                                onChange={this.handlenestedChange('panel3e')}
+                                >
                                     <ExpansionPanelSummary
                                         expandIcon={<ExpandMoreIcon />}
                                         aria-controls="panel3a-content"
@@ -225,6 +249,7 @@ class Profile extends Component {
                                 aria-controls="panel4bh-content"
                                 id="panel4bh-header"
                                 className='App-primary-bg App-Text-White'
+                                style={{padding:7 }}
                             >
                                 <Typography>My Privacy</Typography>
                             </ExpansionPanelSummary>
