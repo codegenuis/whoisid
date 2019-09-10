@@ -140,7 +140,7 @@ class Profile extends Component {
                                             <img src={Uber} alt="uber" style={{ width: 40, height: 42 }} />
                                         </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex
+                                            Lorem ipsum dolor sit amet
                                         </p>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
@@ -164,7 +164,7 @@ class Profile extends Component {
                                             <img src={Uber} alt="uber" style={{ width: 40,height: 42 }} />
                                         </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex
+                                          
                                         </p>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
@@ -188,7 +188,7 @@ class Profile extends Component {
                                             <img src={Uber} alt="uber" style={{ width: 40,height: 42 }} />
                                         </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex
+                                           
                                         </p>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
@@ -212,7 +212,7 @@ class Profile extends Component {
                                             <img src={Uber} alt="uber" style={{ width: 40,height: 42 }} />
                                         </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex
+                                            
                                         </p>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
@@ -236,7 +236,7 @@ class Profile extends Component {
                                             <img src={Uber} alt="uber" style={{ width: 40,height: 42 }} />
                                         </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex
+                                           
                                         </p>
                                     </ExpansionPanelDetails>
                                 </ExpansionPanel>
