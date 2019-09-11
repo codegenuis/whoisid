@@ -39,8 +39,9 @@ class Verify extends Component {
                         <form className="App-form" noValidate autoComplete="off">
                             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                                 <TextField
-                                    id="standard-dense"
-                                    label="Kkan Muhammed"
+                                   id="outlined-name"
+                                   label="Name"
+                                    value="Kkan Muhammed"
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
@@ -48,7 +49,8 @@ class Verify extends Component {
                                 />
                                 <TextField
                                     id="standard-dense"
-                                    label="08034712261"
+                                    label="Phone number"
+                                    value="08034712261"
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
@@ -87,14 +89,16 @@ class Verify extends Component {
                                 </div>
                                 <TextField
                                     id="standard-dense"
-                                    label="103 ibidun Street off"
+                                    label="Address"
+                                    value="103 ibidun Street off"
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
                                 />
                                 <TextField
                                     id="standard-dense"
-                                    label="Western Avenue, ojulegba"
+                                    label="Location"
+                                    value="Western Avenue, ojulegba"
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
