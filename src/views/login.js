@@ -11,7 +11,26 @@ class Login extends Component {
         super(props)
         this.state = {
             loading: false,
+            jobID : '',
         }
+    }
+    
+    handleChange = event => {
+        this.setState({jobID: event.target.value})
+    }
+
+    verify = () => {
+        fetch(`https://swiftend.com/verifyaddress?JobID=${this.state.jobID}`,
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'SERVICEID': '089373'
+            }
+        })
+        .then(res => {res.json()})
+        .then(response => {console.log(response)})
+        .catch(error => {console.log(error)})
     }
 
     render() {
@@ -29,18 +48,20 @@ class Login extends Component {
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
+                                    value = {this.state.jobID}
+                                    onChange = {this.handleChange}
                                 />
-                                <TextField
+                                {/* <TextField
                                     id="standard-dense"
                                     label="Enter Pin"
                                     fullWidth
                                     variant="outlined"
                                     className="InputField"
-                                />
+                                /> */}
                             </div>
-                           <Link to="/verify"><Button className="App-primary-bg App-primary-button" variant="contained" color="primary" style={{ paddingRight: 30, paddingLeft: 30, paddingTop: 10, paddingBottom: 10 }}>
+                           <Button className="App-primary-bg App-primary-button" variant="contained" color="primary" onClick={this.verify} style={{ paddingRight: 30, paddingLeft: 30, paddingTop: 10, paddingBottom: 10 }}>
                                 Done
-                            </Button></Link>
+                            </Button>
                             <p>Don't have an account <Link to="/signup">Sign up</Link></p>
                         </form>
                     </Container>
